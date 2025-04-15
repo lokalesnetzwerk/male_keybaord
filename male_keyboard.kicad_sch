@@ -1303,6 +1303,156 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Switch:SW_Push"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "SW"
+				(at 1.27 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "SW_Push"
+				(at 0 -1.524 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Push button switch, generic, two pins"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "switch normally-open pushbutton push-button"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "SW_Push_0_1"
+				(circle
+					(center -2.032 0)
+					(radius 0.508)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 1.27) (xy 0 3.048)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 2.032 0)
+					(radius 0.508)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 1.27) (xy -2.54 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at -5.08 0 0)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 0 180)
+					(length 2.54)
+					(name "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "power:GND"
 			(power)
 			(pin_numbers
@@ -1405,21 +1555,55 @@
 			(embedded_fonts no)
 		)
 	)
+	(text "LEFT SWITCH MATRIX"
+		(exclude_from_sim no)
+		(at 19.05 72.39 0)
+		(effects
+			(font
+				(size 2 2)
+			)
+			(justify left bottom)
+		)
+		(uuid "6fc0381d-7831-4b1e-9863-335363c785b3")
+	)
+	(text "RIGHT SWITCH MATRIX"
+		(exclude_from_sim no)
+		(at 242.57 76.2 0)
+		(effects
+			(font
+				(size 2 2)
+			)
+			(justify left bottom)
+		)
+		(uuid "f783db93-c5d6-4532-9b73-c4fc89f1a46a")
+	)
 	(junction
-		(at 147.32 71.12)
+		(at 76.2 88.9)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "0849e334-811c-4f29-a90e-486fe82e7ead")
 	)
 	(junction
-		(at 114.3 111.76)
+		(at 217.17 130.81)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "317f0c21-4219-4fc4-8b9b-48b04c6426e1")
+	)
+	(junction
+		(at 43.18 129.54)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "6568288b-7701-479a-9afe-734dc68cc2e3")
 	)
+	(junction
+		(at 250.19 90.17)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "825ad64d-484e-47d4-9c12-16973e545b20")
+	)
 	(wire
 		(pts
-			(xy 171.45 82.55) (xy 171.45 71.12)
+			(xy 100.33 100.33) (xy 100.33 88.9)
 		)
 		(stroke
 			(width 0)
@@ -1429,7 +1613,7 @@
 	)
 	(wire
 		(pts
-			(xy 171.45 71.12) (xy 147.32 71.12)
+			(xy 100.33 88.9) (xy 76.2 88.9)
 		)
 		(stroke
 			(width 0)
@@ -1439,7 +1623,27 @@
 	)
 	(wire
 		(pts
-			(xy 110.49 104.14) (xy 114.3 104.14)
+			(xy 274.32 101.6) (xy 274.32 90.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "134ce7a6-7390-4069-8904-98e91ab7866e")
+	)
+	(wire
+		(pts
+			(xy 213.36 130.81) (xy 217.17 130.81)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "19a316ce-8cef-4e30-aae4-f95b721854ad")
+	)
+	(wire
+		(pts
+			(xy 39.37 121.92) (xy 43.18 121.92)
 		)
 		(stroke
 			(width 0)
@@ -1449,7 +1653,17 @@
 	)
 	(wire
 		(pts
-			(xy 153.67 82.55) (xy 153.67 81.28)
+			(xy 256.54 101.6) (xy 256.54 100.33)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2541bad7-7c27-4ed1-84fb-ebf4892b05c1")
+	)
+	(wire
+		(pts
+			(xy 82.55 100.33) (xy 82.55 99.06)
 		)
 		(stroke
 			(width 0)
@@ -1459,7 +1673,7 @@
 	)
 	(wire
 		(pts
-			(xy 110.49 109.22) (xy 111.76 109.22)
+			(xy 39.37 127) (xy 40.64 127)
 		)
 		(stroke
 			(width 0)
@@ -1469,7 +1683,7 @@
 	)
 	(wire
 		(pts
-			(xy 147.32 106.68) (xy 147.32 76.2)
+			(xy 76.2 124.46) (xy 76.2 93.98)
 		)
 		(stroke
 			(width 0)
@@ -1479,7 +1693,37 @@
 	)
 	(wire
 		(pts
-			(xy 111.76 71.12) (xy 118.11 71.12)
+			(xy 213.36 123.19) (xy 217.17 123.19)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "52c605be-b35b-4d6f-af4a-f0f5456dea6c")
+	)
+	(wire
+		(pts
+			(xy 243.84 90.17) (xy 250.19 90.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "54949256-b2f4-4516-8a53-b21246f5990a")
+	)
+	(wire
+		(pts
+			(xy 264.16 101.6) (xy 256.54 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5c2de486-0d57-4330-8733-1513558bd761")
+	)
+	(wire
+		(pts
+			(xy 40.64 88.9) (xy 46.99 88.9)
 		)
 		(stroke
 			(width 0)
@@ -1489,7 +1733,17 @@
 	)
 	(wire
 		(pts
-			(xy 114.3 111.76) (xy 114.3 115.57)
+			(xy 213.36 125.73) (xy 250.19 125.73)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "631af50c-7ec9-468f-b317-6f8ab12caff5")
+	)
+	(wire
+		(pts
+			(xy 43.18 129.54) (xy 43.18 133.35)
 		)
 		(stroke
 			(width 0)
@@ -1499,7 +1753,17 @@
 	)
 	(wire
 		(pts
-			(xy 110.49 106.68) (xy 147.32 106.68)
+			(xy 214.63 128.27) (xy 214.63 90.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "65a8cbbe-5673-41da-a3d4-451e92741d16")
+	)
+	(wire
+		(pts
+			(xy 39.37 124.46) (xy 76.2 124.46)
 		)
 		(stroke
 			(width 0)
@@ -1509,7 +1773,7 @@
 	)
 	(wire
 		(pts
-			(xy 153.67 81.28) (xy 140.97 81.28)
+			(xy 82.55 99.06) (xy 69.85 99.06)
 		)
 		(stroke
 			(width 0)
@@ -1519,7 +1783,7 @@
 	)
 	(wire
 		(pts
-			(xy 147.32 76.2) (xy 140.97 76.2)
+			(xy 76.2 93.98) (xy 69.85 93.98)
 		)
 		(stroke
 			(width 0)
@@ -1529,7 +1793,37 @@
 	)
 	(wire
 		(pts
-			(xy 161.29 82.55) (xy 153.67 82.55)
+			(xy 214.63 90.17) (xy 220.98 90.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "92ed303a-f104-4a60-98cb-bab4080f03bc")
+	)
+	(wire
+		(pts
+			(xy 274.32 90.17) (xy 250.19 90.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "96baa4d0-b425-4e28-920c-406fca978057")
+	)
+	(wire
+		(pts
+			(xy 250.19 125.73) (xy 250.19 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9b8d9f07-199a-453e-bf3e-8e8f7eca2b3b")
+	)
+	(wire
+		(pts
+			(xy 90.17 100.33) (xy 82.55 100.33)
 		)
 		(stroke
 			(width 0)
@@ -1539,7 +1833,7 @@
 	)
 	(wire
 		(pts
-			(xy 111.76 109.22) (xy 111.76 71.12)
+			(xy 40.64 127) (xy 40.64 88.9)
 		)
 		(stroke
 			(width 0)
@@ -1549,7 +1843,7 @@
 	)
 	(wire
 		(pts
-			(xy 110.49 111.76) (xy 114.3 111.76)
+			(xy 39.37 129.54) (xy 43.18 129.54)
 		)
 		(stroke
 			(width 0)
@@ -1559,7 +1853,47 @@
 	)
 	(wire
 		(pts
-			(xy 114.3 104.14) (xy 114.3 111.76)
+			(xy 250.19 95.25) (xy 243.84 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b5071664-c426-43b1-8c4d-d4af082ceabd")
+	)
+	(wire
+		(pts
+			(xy 256.54 100.33) (xy 243.84 100.33)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c3d63a4c-634e-49ec-8ed0-c0637b9d501d")
+	)
+	(wire
+		(pts
+			(xy 213.36 128.27) (xy 214.63 128.27)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cc7b43ed-f01a-4153-b102-d941044cc9c2")
+	)
+	(wire
+		(pts
+			(xy 217.17 123.19) (xy 217.17 130.81)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d412462f-dc05-4574-bf2e-aa95540e8cf6")
+	)
+	(wire
+		(pts
+			(xy 43.18 121.92) (xy 43.18 129.54)
 		)
 		(stroke
 			(width 0)
@@ -1569,7 +1903,17 @@
 	)
 	(wire
 		(pts
-			(xy 140.97 71.12) (xy 147.32 71.12)
+			(xy 217.17 130.81) (xy 217.17 134.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ec68111f-75d7-4085-986b-a4eccd8a81cc")
+	)
+	(wire
+		(pts
+			(xy 69.85 88.9) (xy 76.2 88.9)
 		)
 		(stroke
 			(width 0)
@@ -1577,34 +1921,1618 @@
 		)
 		(uuid "f359bbd0-85bf-4eb9-8a06-751abad229b3")
 	)
+	(global_label "DNG"
+		(shape input)
+		(at 220.98 30.48 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "00616736-41a0-4fe7-9a9a-a45ffcaf4975")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 220.9006 36.7636 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "18a"
+		(shape input)
+		(at 194.31 68.58 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "0aa538fb-5433-4d32-8c3c-cbb9d0a9ab60")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 188.3288 68.5006 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "DNG"
+		(shape input)
+		(at 204.47 55.88 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "1373d412-8bd4-46e9-8e23-8206265a739e")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 204.3906 62.1636 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "9"
+		(shape input)
+		(at 73.66 39.37 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "15fc0b12-1868-4a88-b14f-c325dbb9f475")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 70.0374 39.2906 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "7a"
+		(shape input)
+		(at 243.84 43.18 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "162b6207-5b24-40b2-b110-f5b99fe2aa8f")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 239.0683 43.1006 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "6"
+		(shape input)
+		(at 24.13 39.37 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "1842173e-9d15-40c9-8aa3-a7b714e1316a")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 20.5074 39.2906 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "GND"
+		(shape input)
+		(at 83.82 39.37 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "1e6eddec-9206-42ee-a34e-c0fc64d49881")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 83.7406 45.6536 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "10a"
+		(shape input)
+		(at 194.31 43.18 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "23069e4e-f4ef-4577-8ba1-b5486ff70f99")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 188.3288 43.1006 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "GND"
+		(shape input)
+		(at 67.31 64.77 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "23af89da-2a7d-441b-948e-c171b49aa538")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 67.2306 71.0536 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "11a"
+		(shape input)
+		(at 260.35 55.88 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "2487f271-1e58-46d4-9519-7ce6ea0bef86")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 254.3688 55.8006 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "GND"
+		(shape input)
+		(at 67.31 52.07 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "2841769a-23af-4d2d-b1f8-8c2cedd0ea6b")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 67.2306 58.3536 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "DNG"
+		(shape input)
+		(at 270.51 43.18 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "2857920d-530b-4f17-a50e-3af72fb02461")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 270.4306 49.4636 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "DNG"
+		(shape input)
+		(at 254 43.18 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "2e826043-6a0a-4625-a065-a9383de90888")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 253.9206 49.4636 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "5a"
+		(shape input)
+		(at 194.31 30.48 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "317914d4-e210-4f01-8023-40500f26a1bb")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 189.5383 30.4006 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "GND"
+		(shape input)
+		(at 67.31 39.37 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "3375864d-381d-461a-8f2e-27d7fe9ce4aa")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 67.2306 45.6536 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "DNG"
+		(shape input)
+		(at 254 30.48 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "35113fa1-f593-4714-82bf-8559c43a11f1")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 253.9206 36.7636 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "13a"
+		(shape input)
+		(at 227.33 55.88 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "363154fb-6e88-4216-ae30-fd15f2462251")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 221.3488 55.8006 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "4"
+		(shape input)
+		(at 73.66 26.67 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "3c66ab0e-6da9-4eeb-ace4-c8afaf7fa730")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 70.0374 26.5906 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "GND"
+		(shape input)
+		(at 83.82 52.07 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "53603195-6149-4692-b246-4b1cdb781539")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 83.7406 58.3536 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "14"
+		(shape input)
+		(at 73.66 52.07 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "563040ff-15cc-4dc2-8a37-1df71dbfde53")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 68.8279 51.9906 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "7"
+		(shape input)
+		(at 40.64 39.37 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "5671d51d-7cf6-416a-a955-51621863fb5d")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 37.0174 39.2906 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "DNG"
+		(shape input)
+		(at 204.47 68.58 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "57296ff1-b139-46fd-95d6-21b0d219852e")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 204.3906 74.8636 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "3a"
+		(shape input)
+		(at 227.33 30.48 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "58804266-dbbd-463d-9783-d502f3edc033")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 222.5583 30.4006 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "1"
+		(shape input)
+		(at 24.13 26.67 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "5b097461-c63c-4743-9765-5052116e04ad")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 20.5074 26.7494 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "DNG"
+		(shape input)
+		(at 254 55.88 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "5c321380-d7a0-4b5c-bf6a-f380fcc88824")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 253.9206 62.1636 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "GND"
+		(shape input)
+		(at 100.33 39.37 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "5f51e0f3-8313-4976-8b91-728b20b410b3")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 100.2506 45.6536 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "GND"
+		(shape input)
+		(at 34.29 39.37 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "64ff3025-fbdd-41d8-9c85-e6e42bfea4ff")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 34.2106 45.6536 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "10"
+		(shape input)
+		(at 90.17 39.37 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "69e458f5-d198-4e1f-8c01-784485f7d8cd")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 85.3379 39.2906 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "DNG"
+		(shape input)
+		(at 204.47 43.18 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "722f1c86-c2a1-4992-b374-597fd57b9a1d")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 204.3906 49.4636 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "18"
+		(shape input)
+		(at 90.17 64.77 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "752f9541-80fb-4f3f-a899-45a679ef51aa")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 85.3379 64.6906 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "GND"
+		(shape input)
+		(at 100.33 52.07 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "75a726e2-5c72-4f0f-8fa0-95c3ebbe4cd9")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 100.2506 58.3536 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "12"
+		(shape input)
+		(at 40.64 52.07 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "7bcce1d8-6beb-4e86-8b63-b09d818289f1")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 35.8079 51.9906 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "DNG"
+		(shape input)
+		(at 204.47 30.48 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "7e28548b-e8c1-4124-8ec0-57c4b350e612")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 204.3906 36.7636 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "2a"
+		(shape input)
+		(at 243.84 30.48 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "7e2bead6-49da-4ba5-8c2b-1899593f377b")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 239.0683 30.4006 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "17"
+		(shape input)
+		(at 73.66 64.77 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "80c8fc49-736a-4cc8-938d-b15a8fdf129d")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 68.8279 64.6906 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "GND"
+		(shape input)
+		(at 100.33 26.67 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "813b8c07-0fca-4dbd-aba8-3c9d16653cb8")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 100.2506 32.9536 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "DNG"
+		(shape input)
+		(at 220.98 43.18 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "825826a2-2fbb-4614-b614-dd50df4abbc1")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 220.9006 49.4636 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "GND"
+		(shape input)
+		(at 67.31 26.67 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "82730e82-1c7a-4b20-bee1-fe7ab8e6e084")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 67.2306 32.9536 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "5"
+		(shape input)
+		(at 90.17 26.67 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "8b0d682c-544a-4348-8610-bd6ba4f4154b")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 86.5474 26.5906 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "GND"
+		(shape input)
+		(at 34.29 26.67 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "8e980b31-30b6-4284-8191-414e4116bb7f")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 34.2106 32.9536 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "15a"
+		(shape input)
+		(at 194.31 55.88 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "9e6f33b4-d04d-47dd-8b0d-88050c396b6a")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 188.3288 55.8006 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "2"
+		(shape input)
+		(at 40.64 26.67 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "a3593f24-91de-409f-97af-01b5a6b95bdd")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 37.0174 26.7494 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "8a"
+		(shape input)
+		(at 227.33 43.18 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "a7a904c4-4d29-49d4-94bf-ca347232f485")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 222.5583 43.1006 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "GND"
+		(shape input)
+		(at 50.8 26.67 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "a837836a-46c6-4a21-a95d-52c7789fa681")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 50.7206 32.9536 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "GND"
+		(shape input)
+		(at 34.29 52.07 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "a9aacbea-81dd-4707-be79-d7ffbee59be8")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 34.2106 58.3536 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "9a"
+		(shape input)
+		(at 210.82 43.18 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "ab8584ea-0264-4533-ae5b-fa7ee01488ef")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 206.0483 43.1006 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "DNG"
+		(shape input)
+		(at 237.49 30.48 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "ad73a8b4-71d5-4921-beee-e2435ba4bf57")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 237.4106 36.7636 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "13"
+		(shape input)
+		(at 57.15 52.07 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "b2018a4b-3964-4d79-9949-c2119109c843")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 52.3179 51.9906 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "16a"
+		(shape input)
+		(at 227.33 68.58 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "b4106e1b-3c88-462d-bc07-4843c872ef94")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 221.3488 68.5006 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "12a"
+		(shape input)
+		(at 243.84 55.88 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "b554dbb7-a083-481a-ba22-97bccb50faa4")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 237.8588 55.8006 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "6a"
+		(shape input)
+		(at 260.35 43.18 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "b9d7e4cd-e192-47a4-a50f-26e7511f6173")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 255.5783 43.1006 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "GND"
+		(shape input)
+		(at 50.8 52.07 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "bb6fe30e-aeb1-4d6c-9e4a-224bf22110fc")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 50.7206 58.3536 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "DNG"
+		(shape input)
+		(at 237.49 68.58 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "be8848b3-9489-4323-96a8-a3be75cf0992")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 237.4106 74.8636 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "DNG"
+		(shape input)
+		(at 270.51 30.48 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "c10023da-e550-493d-b8cb-114fd033cf1e")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 270.4306 36.7636 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "DNG"
+		(shape input)
+		(at 270.51 55.88 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "c35f5906-8dc4-40c1-b25e-d93e42630d61")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 270.4306 62.1636 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "8"
+		(shape input)
+		(at 57.15 39.37 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "c75cf9b6-360c-4bb0-bd4b-a855b3a5ebeb")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 53.5274 39.2906 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "GND"
+		(shape input)
+		(at 83.82 64.77 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "c7cf2667-63ba-4bca-b275-488c3af4dc42")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 83.7406 71.0536 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "16"
+		(shape input)
+		(at 57.15 64.77 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "c863b72c-4daa-4ecc-9939-bfeb74feabcc")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 52.3179 64.6906 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "DNG"
+		(shape input)
+		(at 237.49 55.88 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "ca113174-6643-42b2-8b9f-0c9053f802cf")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 237.4106 62.1636 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "DNG"
+		(shape input)
+		(at 220.98 55.88 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "cba1644c-dc94-4760-8af1-cb594b78bc71")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 220.9006 62.1636 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "GND"
+		(shape input)
+		(at 83.82 26.67 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "cbde832e-fcb9-45e6-a858-0dcd743fdd0b")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 83.7406 32.9536 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "1a"
+		(shape input)
+		(at 260.35 30.48 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "ceb25769-8f6e-40e8-bfda-f3679ab201c2")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 255.5783 30.4006 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "4a"
+		(shape input)
+		(at 210.82 30.48 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "d5d5aca4-3afd-4809-ac06-e8eaadf99f32")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 206.0483 30.4006 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "11"
+		(shape input)
+		(at 24.13 52.07 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "d958c97c-42ee-4be6-980c-78fe5b0588af")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 19.2979 51.9906 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "3"
+		(shape input)
+		(at 57.15 26.67 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "deea0673-64c3-4e44-8788-9eec79c8f230")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 53.5274 26.7494 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "15"
+		(shape input)
+		(at 90.17 52.07 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "e4e009d3-8c5d-47ce-9c41-daf1a5304cb3")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 85.3379 51.9906 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "GND"
+		(shape input)
+		(at 100.33 64.77 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "e54847e0-01a7-42e2-8b28-6a35df129889")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 100.2506 71.0536 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "DNG"
+		(shape input)
+		(at 220.98 68.58 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "e80345c0-96dc-4f59-b919-605adbf8d128")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 220.9006 74.8636 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "DNG"
+		(shape input)
+		(at 237.49 43.18 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "f49e06ff-b0b6-4874-b9dc-c18d8a22df03")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 237.4106 49.4636 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "14a"
+		(shape input)
+		(at 210.82 55.88 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "f5897e02-c803-438a-af7f-5c4f57a557b7")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 204.8388 55.8006 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "17a"
+		(shape input)
+		(at 210.82 68.58 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "f67253d3-6492-4f39-94ef-4fc63072ed8f")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 204.8388 68.5006 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "GND"
+		(shape input)
+		(at 50.8 39.37 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "fa850938-f7cc-4825-b56b-078696b9acc6")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 50.7206 45.6536 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
 	(symbol
-		(lib_id "Connector_Audio:AudioJack4")
-		(at 105.41 106.68 0)
+		(lib_id "Switch:SW_Push")
+		(at 62.23 52.07 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "4b045cee-dda7-46b7-bff9-efc2307193fd")
-		(property "Reference" "J2"
-			(at 102.87 97.79 0)
+		(uuid "0df9dfdd-5080-463f-8b74-c0ae6d995fcc")
+		(property "Reference" "SW13"
+			(at 62.23 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "AudioJack4"
-			(at 102.87 100.33 0)
+		(property "Value" "SW_Push"
+			(at 62.23 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "Keebio-Parts:TRRS-PJ-320A"
-			(at 105.41 106.68 0)
+		(property "Footprint" "Beibob:Kailh_socket_PG1350_optional"
+			(at 62.23 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1613,7 +3541,475 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 105.41 106.68 0)
+			(at 62.23 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 62.23 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "b6ef19b7-6601-4b1a-beaf-40499e28fc4b")
+		)
+		(pin "2"
+			(uuid "0dfe43ac-22ca-4aa1-b17c-bc69bd983ff6")
+		)
+		(instances
+			(project "male_keyboard"
+				(path "/58898b31-0272-4fd0-b6ca-dcb6784775e4"
+					(reference "SW13")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 217.17 134.62 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "1831d02b-a538-4d3f-8af9-78ab5ca4178b")
+		(property "Reference" "#PWR03"
+			(at 217.17 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 217.17 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 217.17 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 217.17 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 217.17 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "7a9d8f44-3a62-44ec-80ba-319e5380b9e2")
+		)
+		(instances
+			(project "male_keyboard"
+				(path "/58898b31-0272-4fd0-b6ca-dcb6784775e4"
+					(reference "#PWR03")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 232.41 43.18 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "27b29cac-7c0b-4ef3-8a7e-60cefdfabe25")
+		(property "Reference" "SW26"
+			(at 232.41 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_Push"
+			(at 232.41 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Beibob:Kailh_socket_PG1350_optional"
+			(at 232.41 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 232.41 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 232.41 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "111258e0-8a69-4328-8c94-33f0ca7592b9")
+		)
+		(pin "2"
+			(uuid "51aca992-94d3-473f-9942-0e8f0c9f7153")
+		)
+		(instances
+			(project "male_keyboard"
+				(path "/58898b31-0272-4fd0-b6ca-dcb6784775e4"
+					(reference "SW26")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 78.74 26.67 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "289a8c4d-cdd4-4b98-a632-dd9443a68ee3")
+		(property "Reference" "SW5"
+			(at 78.74 19.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_Push"
+			(at 78.74 21.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Beibob:Kailh_socket_PG1350_optional"
+			(at 78.74 21.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 78.74 21.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 78.74 26.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "4e0a2d70-254e-43df-9a78-0db4321affa7")
+		)
+		(pin "2"
+			(uuid "d60a8c2c-ddef-48fc-8dc7-440e92711162")
+		)
+		(instances
+			(project "male_keyboard"
+				(path "/58898b31-0272-4fd0-b6ca-dcb6784775e4"
+					(reference "SW5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 78.74 52.07 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "39926fb9-c0f5-41a6-8d16-4e880df34ed3")
+		(property "Reference" "SW14"
+			(at 78.74 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_Push"
+			(at 78.74 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Beibob:Kailh_socket_PG1350_optional"
+			(at 78.74 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 78.74 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 78.74 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "933b61f6-1402-49db-9e32-44a55b5d957e")
+		)
+		(pin "2"
+			(uuid "2b11b44c-84cd-4fd7-870c-49b0aec5a654")
+		)
+		(instances
+			(project "male_keyboard"
+				(path "/58898b31-0272-4fd0-b6ca-dcb6784775e4"
+					(reference "SW14")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 199.39 43.18 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "3e1abf76-a63a-43c4-873f-4aae20b837e4")
+		(property "Reference" "SW24"
+			(at 199.39 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_Push"
+			(at 199.39 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Beibob:Kailh_socket_PG1350_optional"
+			(at 199.39 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 199.39 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 199.39 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "97011872-6e9b-402f-ae94-cad0f0afed9b")
+		)
+		(pin "2"
+			(uuid "59536a02-803e-4746-ba8d-f98df409e74e")
+		)
+		(instances
+			(project "male_keyboard"
+				(path "/58898b31-0272-4fd0-b6ca-dcb6784775e4"
+					(reference "SW24")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 62.23 26.67 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "3f8ce091-9cbe-47ad-a278-da410169aaeb")
+		(property "Reference" "SW4"
+			(at 62.23 19.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_Push"
+			(at 62.23 21.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Beibob:Kailh_socket_PG1350_optional"
+			(at 62.23 21.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 62.23 21.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 62.23 26.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "47f9a32e-5f1a-4cb5-b140-4b182812c858")
+		)
+		(pin "2"
+			(uuid "cd4cf4b0-d83d-4d98-8ee8-4532f44bbd4d")
+		)
+		(instances
+			(project "male_keyboard"
+				(path "/58898b31-0272-4fd0-b6ca-dcb6784775e4"
+					(reference "SW4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector_Audio:AudioJack4")
+		(at 34.29 124.46 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "4b045cee-dda7-46b7-bff9-efc2307193fd")
+		(property "Reference" "J2"
+			(at 31.75 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "AudioJack4"
+			(at 31.75 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Keebio-Parts:TRRS-PJ-320A"
+			(at 34.29 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 34.29 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1622,7 +4018,7 @@
 			)
 		)
 		(property "Description" "Audio Jack, 4 Poles (TRRS)"
-			(at 105.41 106.68 0)
+			(at 34.29 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1652,17 +4048,151 @@
 		)
 	)
 	(symbol
-		(lib_id "Switch:SW_MEC_5G")
-		(at 166.37 82.55 0)
+		(lib_id "Switch:SW_Push")
+		(at 78.74 39.37 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "96eed130-395e-4217-8c01-eb6172a8d626")
-		(property "Reference" "SW1"
-			(at 166.37 74.93 0)
+		(uuid "4b1e786e-a341-4732-9154-d08c4fdd29f4")
+		(property "Reference" "SW9"
+			(at 78.74 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_Push"
+			(at 78.74 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Beibob:Kailh_socket_PG1350_optional"
+			(at 78.74 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 78.74 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 78.74 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "0079ee79-315d-4867-a94e-895edf1ca480")
+		)
+		(pin "2"
+			(uuid "bb5c8f03-1779-4bff-9a97-98e44f592517")
+		)
+		(instances
+			(project "male_keyboard"
+				(path "/58898b31-0272-4fd0-b6ca-dcb6784775e4"
+					(reference "SW9")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 248.92 30.48 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "50a9fb8e-7d76-4304-84ab-e861389e47f7")
+		(property "Reference" "SW23"
+			(at 248.92 22.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_Push"
+			(at 248.92 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Beibob:Kailh_socket_PG1350_optional"
+			(at 248.92 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 248.92 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 248.92 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "8656fc89-287a-4a84-9f8f-d51e25853f8f")
+		)
+		(pin "2"
+			(uuid "5dd669ce-b87d-4153-9147-02c66c542359")
+		)
+		(instances
+			(project "male_keyboard"
+				(path "/58898b31-0272-4fd0-b6ca-dcb6784775e4"
+					(reference "SW23")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_MEC_5G")
+		(at 269.24 101.6 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "50dc4360-7f44-431d-b144-0248749b572a")
+		(property "Reference" "SW38"
+			(at 269.24 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1670,7 +4200,7 @@
 			)
 		)
 		(property "Value" "SW_MEC_5G"
-			(at 166.37 77.47 0)
+			(at 269.24 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1678,7 +4208,7 @@
 			)
 		)
 		(property "Footprint" "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB"
-			(at 167.132 71.12 0)
+			(at 270.002 90.17 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1687,7 +4217,7 @@
 			)
 		)
 		(property "Datasheet" "http://www.apem.com/int/index.php?controller=attachment&id_attachment=488"
-			(at 166.624 66.04 0)
+			(at 269.494 85.09 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1696,7 +4226,611 @@
 			)
 		)
 		(property "Description" "MEC 5G single pole normally-open tactile switch"
-			(at 166.116 68.834 0)
+			(at 268.986 87.884 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "f4915e68-3e3f-4553-a18e-430a54498632")
+		)
+		(pin "1"
+			(uuid "166465a8-2080-4b86-b0d2-ab8538854d8e")
+		)
+		(instances
+			(project "male_keyboard"
+				(path "/58898b31-0272-4fd0-b6ca-dcb6784775e4"
+					(reference "SW38")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 248.92 43.18 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "52145a84-d5bb-49ad-8bc5-3fa566ef4835")
+		(property "Reference" "SW27"
+			(at 248.92 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_Push"
+			(at 248.92 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Beibob:Kailh_socket_PG1350_optional"
+			(at 248.92 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 248.92 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 248.92 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "18bcc8d5-8a2d-479b-83a1-ae49dac2174d")
+		)
+		(pin "2"
+			(uuid "760de67c-87d5-4dd0-a806-6fe4e44f89cc")
+		)
+		(instances
+			(project "male_keyboard"
+				(path "/58898b31-0272-4fd0-b6ca-dcb6784775e4"
+					(reference "SW27")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 95.25 64.77 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "54b89753-b691-46dc-9865-259b3f3d81cc")
+		(property "Reference" "SW19"
+			(at 95.25 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_Push"
+			(at 95.25 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Beibob:Kailh_socket_PG1350_optional"
+			(at 95.25 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 95.25 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 95.25 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "70c8a20c-9cb3-4bc3-85f5-10bc4d80e50a")
+		)
+		(pin "2"
+			(uuid "d4d70178-74f9-40a2-87b5-3a1eb91940de")
+		)
+		(instances
+			(project "male_keyboard"
+				(path "/58898b31-0272-4fd0-b6ca-dcb6784775e4"
+					(reference "SW19")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 29.21 39.37 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "559fd6b4-feca-479e-8bce-ac1acd7db526")
+		(property "Reference" "SW6"
+			(at 29.21 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_Push"
+			(at 29.21 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Beibob:Kailh_socket_PG1350_optional"
+			(at 29.21 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 29.21 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 29.21 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "292daf28-4b72-49fa-8719-19a51b51a654")
+		)
+		(pin "2"
+			(uuid "50a4c2bf-178c-494f-a885-8c0c2cd86e10")
+		)
+		(instances
+			(project "male_keyboard"
+				(path "/58898b31-0272-4fd0-b6ca-dcb6784775e4"
+					(reference "SW6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 215.9 68.58 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "67c29c51-1383-4183-8b14-d1b3d02b2404")
+		(property "Reference" "SW35"
+			(at 215.9 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_Push"
+			(at 215.9 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Beibob:Kailh_socket_PG1350_optional"
+			(at 215.9 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 215.9 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 215.9 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "b5e585eb-f152-4303-a9a9-dd6bf0efd5a5")
+		)
+		(pin "2"
+			(uuid "06e8597d-2358-4c07-8099-ca8ad50a96ef")
+		)
+		(instances
+			(project "male_keyboard"
+				(path "/58898b31-0272-4fd0-b6ca-dcb6784775e4"
+					(reference "SW35")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 248.92 55.88 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "70515e19-955e-47a0-85a9-7c1fc9ebd74b")
+		(property "Reference" "SW32"
+			(at 248.92 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_Push"
+			(at 248.92 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Beibob:Kailh_socket_PG1350_optional"
+			(at 248.92 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 248.92 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 248.92 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "802a6865-aaa6-4ecc-8e60-bfb10c5201e7")
+		)
+		(pin "2"
+			(uuid "1d4b1886-b663-47db-9873-89f934ce61eb")
+		)
+		(instances
+			(project "male_keyboard"
+				(path "/58898b31-0272-4fd0-b6ca-dcb6784775e4"
+					(reference "SW32")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 95.25 52.07 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "7f2c61da-b83f-42a9-ac9a-d7a69583a630")
+		(property "Reference" "SW18"
+			(at 95.25 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_Push"
+			(at 95.25 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Beibob:Kailh_socket_PG1350_optional"
+			(at 95.25 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 95.25 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 95.25 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "254e841a-a49e-452e-a6a2-e76fe3cd1986")
+		)
+		(pin "2"
+			(uuid "56b82ddf-15e2-4bdc-83e8-9630f138bdd5")
+		)
+		(instances
+			(project "male_keyboard"
+				(path "/58898b31-0272-4fd0-b6ca-dcb6784775e4"
+					(reference "SW18")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 45.72 52.07 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "80247bdf-5fb0-4e30-aa15-942441b3aeb6")
+		(property "Reference" "SW12"
+			(at 45.72 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_Push"
+			(at 45.72 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Beibob:Kailh_socket_PG1350_optional"
+			(at 45.72 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 45.72 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 45.72 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "e3e20eb9-e800-435a-80ce-87c5cddbfec0")
+		)
+		(pin "2"
+			(uuid "8a7ef2f0-8254-4aa8-aacd-cff1fc27e766")
+		)
+		(instances
+			(project "male_keyboard"
+				(path "/58898b31-0272-4fd0-b6ca-dcb6784775e4"
+					(reference "SW12")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 215.9 55.88 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "84c4bd05-189d-4408-bb1a-f46476b7b452")
+		(property "Reference" "SW30"
+			(at 215.9 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_Push"
+			(at 215.9 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Beibob:Kailh_socket_PG1350_optional"
+			(at 215.9 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 215.9 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 215.9 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "5acc29b9-478e-4717-a79e-85efc6022134")
+		)
+		(pin "2"
+			(uuid "22f98f2c-f870-4ca6-9d4d-338ba991cce1")
+		)
+		(instances
+			(project "male_keyboard"
+				(path "/58898b31-0272-4fd0-b6ca-dcb6784775e4"
+					(reference "SW30")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_MEC_5G")
+		(at 95.25 100.33 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "96eed130-395e-4217-8c01-eb6172a8d626")
+		(property "Reference" "SW1"
+			(at 95.25 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_MEC_5G"
+			(at 95.25 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB"
+			(at 96.012 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.apem.com/int/index.php?controller=attachment&id_attachment=488"
+			(at 95.504 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "MEC 5G single pole normally-open tactile switch"
+			(at 94.996 86.614 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1720,8 +4854,1104 @@
 		)
 	)
 	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 29.21 52.07 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "9751aa0a-0813-4834-a977-1d06029a1f3b")
+		(property "Reference" "SW11"
+			(at 29.21 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_Push"
+			(at 29.21 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Beibob:Kailh_socket_PG1350_optional"
+			(at 29.21 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 29.21 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 29.21 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "ef2ce4e4-b09c-4638-8225-877b4b08f26c")
+		)
+		(pin "2"
+			(uuid "4357a6cb-394c-4475-a805-93bfc6f91513")
+		)
+		(instances
+			(project "male_keyboard"
+				(path "/58898b31-0272-4fd0-b6ca-dcb6784775e4"
+					(reference "SW11")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 232.41 30.48 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a4f79a21-b348-4768-a182-de6e0cd8792d")
+		(property "Reference" "SW22"
+			(at 232.41 22.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_Push"
+			(at 232.41 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Beibob:Kailh_socket_PG1350_optional"
+			(at 232.41 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 232.41 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 232.41 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "432dd6f7-530e-4c29-b8ba-0c23e1c55384")
+		)
+		(pin "2"
+			(uuid "19edfa5f-5163-4f86-8ac2-748aa7e946c7")
+		)
+		(instances
+			(project "male_keyboard"
+				(path "/58898b31-0272-4fd0-b6ca-dcb6784775e4"
+					(reference "SW22")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector_Audio:AudioJack4")
+		(at 208.28 125.73 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a6ec8986-5575-44dc-bbbb-43259d4ba8b8")
+		(property "Reference" "J3"
+			(at 205.74 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "AudioJack4"
+			(at 205.74 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Keebio-Parts:TRRS-PJ-320A"
+			(at 208.28 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 208.28 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Audio Jack, 4 Poles (TRRS)"
+			(at 208.28 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "4"
+			(uuid "aa944902-1e41-40c6-a2f6-3e7ba5b69810")
+		)
+		(pin "2"
+			(uuid "1a7ed7bc-717e-4649-b6b4-5b1b959c968d")
+		)
+		(pin "1"
+			(uuid "6cef7607-f9b4-4b27-81c4-b712e8a14032")
+		)
+		(pin "3"
+			(uuid "f4d1771e-ae7d-46ec-b4b6-858cf4d2932e")
+		)
+		(instances
+			(project "male_keyboard"
+				(path "/58898b31-0272-4fd0-b6ca-dcb6784775e4"
+					(reference "J3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 95.25 26.67 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a743f533-4c9c-497d-9ec2-45c6b7a76128")
+		(property "Reference" "SW10"
+			(at 95.25 19.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_Push"
+			(at 95.25 21.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Beibob:Kailh_socket_PG1350_optional"
+			(at 95.25 21.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 95.25 21.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 95.25 26.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "c01e9005-38bf-43f2-b673-f63718b7e50e")
+		)
+		(pin "2"
+			(uuid "56514d99-2a49-4f4b-8f12-83e8a379f2c9")
+		)
+		(instances
+			(project "male_keyboard"
+				(path "/58898b31-0272-4fd0-b6ca-dcb6784775e4"
+					(reference "SW10")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 78.74 64.77 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a7a9c6b9-31b3-4e5a-a4c7-24b17d73b477")
+		(property "Reference" "SW17"
+			(at 78.74 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_Push"
+			(at 78.74 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Beibob:Kailh_socket_PG1350_optional"
+			(at 78.74 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 78.74 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 78.74 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "27ae9220-ea39-476a-849a-4941147467cd")
+		)
+		(pin "2"
+			(uuid "274081ff-40fb-4111-82ac-e7d796389284")
+		)
+		(instances
+			(project "male_keyboard"
+				(path "/58898b31-0272-4fd0-b6ca-dcb6784775e4"
+					(reference "SW17")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 29.21 26.67 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b654ebd1-32f2-4029-be26-757d899cc55d")
+		(property "Reference" "SW2"
+			(at 29.21 19.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_Push"
+			(at 29.21 21.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB"
+			(at 29.21 21.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 29.21 21.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 29.21 26.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "3009d207-8a48-49ce-a722-256285ea6fee")
+		)
+		(pin "2"
+			(uuid "d0fc3a9d-3f53-4d5e-8903-8b4771345275")
+		)
+		(instances
+			(project "male_keyboard"
+				(path "/58898b31-0272-4fd0-b6ca-dcb6784775e4"
+					(reference "SW2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 232.41 68.58 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b907bf80-0be6-4a46-8d8d-a8344c167810")
+		(property "Reference" "SW36"
+			(at 232.41 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_Push"
+			(at 232.41 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Beibob:Kailh_socket_PG1350_optional"
+			(at 232.41 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 232.41 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 232.41 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "9f542ce6-a48e-4700-9b49-ed30562db4bb")
+		)
+		(pin "2"
+			(uuid "8b0901a8-8785-4422-94c4-d7348544beab")
+		)
+		(instances
+			(project "male_keyboard"
+				(path "/58898b31-0272-4fd0-b6ca-dcb6784775e4"
+					(reference "SW36")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 62.23 39.37 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c1cba178-0f3b-44b8-aa66-f9575507e569")
+		(property "Reference" "SW8"
+			(at 62.23 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_Push"
+			(at 62.23 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Beibob:Kailh_socket_PG1350_optional"
+			(at 62.23 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 62.23 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 62.23 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "47ed813a-8c0c-4313-8058-f912fb8f125d")
+		)
+		(pin "2"
+			(uuid "af0aaaad-9b0c-4ba4-9793-29da742cda83")
+		)
+		(instances
+			(project "male_keyboard"
+				(path "/58898b31-0272-4fd0-b6ca-dcb6784775e4"
+					(reference "SW8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 199.39 55.88 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c2c1a3dd-56fd-4326-8aac-f878a4dd60c2")
+		(property "Reference" "SW29"
+			(at 199.39 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_Push"
+			(at 199.39 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Beibob:Kailh_socket_PG1350_optional"
+			(at 199.39 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 199.39 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 199.39 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "da1246fc-f369-4f90-849b-4b1211868266")
+		)
+		(pin "2"
+			(uuid "ae3aa296-c30e-46c6-9677-a5384ef79198")
+		)
+		(instances
+			(project "male_keyboard"
+				(path "/58898b31-0272-4fd0-b6ca-dcb6784775e4"
+					(reference "SW29")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 62.23 64.77 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c37e8324-25e3-46fd-834b-b636db891474")
+		(property "Reference" "SW16"
+			(at 62.23 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_Push"
+			(at 62.23 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Beibob:Kailh_socket_PG1350_optional"
+			(at 62.23 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 62.23 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 62.23 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "06fc8514-50df-4d38-9987-de2705cd282d")
+		)
+		(pin "2"
+			(uuid "7bb10a59-25b0-434d-b852-929a01a64829")
+		)
+		(instances
+			(project "male_keyboard"
+				(path "/58898b31-0272-4fd0-b6ca-dcb6784775e4"
+					(reference "SW16")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 265.43 55.88 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c8f87553-70a0-4c61-bb2f-af15c4bfa503")
+		(property "Reference" "SW37"
+			(at 265.43 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_Push"
+			(at 265.43 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Beibob:Kailh_socket_PG1350_optional"
+			(at 265.43 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 265.43 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 265.43 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "ba2790a3-6b00-4893-96c8-204a73212363")
+		)
+		(pin "2"
+			(uuid "0c551a19-1425-4f6e-9c36-ba4392f17092")
+		)
+		(instances
+			(project "male_keyboard"
+				(path "/58898b31-0272-4fd0-b6ca-dcb6784775e4"
+					(reference "SW37")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 45.72 39.37 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d04e6f40-09ba-4205-b6f5-b97c9701dab2")
+		(property "Reference" "SW7"
+			(at 45.72 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_Push"
+			(at 45.72 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Beibob:Kailh_socket_PG1350_optional"
+			(at 45.72 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 45.72 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 45.72 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "d72ee769-9b68-4fee-9362-b129db24a080")
+		)
+		(pin "2"
+			(uuid "be9761db-8f0a-42b2-ac58-9af5d49be9cd")
+		)
+		(instances
+			(project "male_keyboard"
+				(path "/58898b31-0272-4fd0-b6ca-dcb6784775e4"
+					(reference "SW7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 199.39 68.58 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d10ed980-6f29-4668-8ef1-7335908ee234")
+		(property "Reference" "SW34"
+			(at 199.39 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_Push"
+			(at 199.39 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Beibob:Kailh_socket_PG1350_optional"
+			(at 199.39 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 199.39 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 199.39 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "319cc8a8-2abf-4783-b240-c6dd8d3726e5")
+		)
+		(pin "2"
+			(uuid "df8acd36-d463-4f64-bed5-ccef880dd2ff")
+		)
+		(instances
+			(project "male_keyboard"
+				(path "/58898b31-0272-4fd0-b6ca-dcb6784775e4"
+					(reference "SW34")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 215.9 30.48 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d1ef959d-2288-4172-b7d4-f5edb4e7f288")
+		(property "Reference" "SW21"
+			(at 215.9 22.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_Push"
+			(at 215.9 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Beibob:Kailh_socket_PG1350_optional"
+			(at 215.9 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 215.9 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 215.9 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "2b28741c-6732-437d-aa9b-f64aac9ee5c5")
+		)
+		(pin "2"
+			(uuid "c24a0e79-b833-4b8d-8e0f-a8572a408009")
+		)
+		(instances
+			(project "male_keyboard"
+				(path "/58898b31-0272-4fd0-b6ca-dcb6784775e4"
+					(reference "SW21")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_name "Conn_01x12_1")
+		(lib_id "Connector_Generic:Conn_01x12")
+		(at 226.06 100.33 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "d3efe398-8122-423e-bd45-bfb913727fb1")
+		(property "Reference" "J4"
+			(at 231.902 82.296 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Elite-Pi Microcontroller"
+			(at 221.488 84.582 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Keebio-Parts:Elite-C"
+			(at 265.684 81.788 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 226.06 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x12, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 226.822 78.486 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f2dd9b83-bf68-4e74-8586-0cda7ad1ede3")
+		)
+		(pin "2"
+			(uuid "0fa288ef-84aa-47bf-a080-ff2ebff97fe7")
+		)
+		(pin "3"
+			(uuid "99ed4789-46d8-4a04-9fa6-47d823c34645")
+		)
+		(pin "4"
+			(uuid "b4ac129f-06e0-4c6d-8d1b-c0389d511f22")
+		)
+		(pin "8"
+			(uuid "2b77e35f-9c6f-482e-9a63-048386ec5138")
+		)
+		(pin "9"
+			(uuid "f97f3046-0789-4b3d-be25-b1dc711d3f6c")
+		)
+		(pin "10"
+			(uuid "865df1be-ade1-49ee-ada8-25294b0ee440")
+		)
+		(pin "5"
+			(uuid "6cf4bc58-107e-4c56-9392-aa6af8dc3587")
+		)
+		(pin "6"
+			(uuid "1130c58d-99e6-4296-9907-c3d5ba973e7a")
+		)
+		(pin "7"
+			(uuid "40597697-212d-4ba1-927c-837248a3962d")
+		)
+		(pin "11"
+			(uuid "79c6f5cd-8ee4-4fbd-a2e6-efc119972c0c")
+		)
+		(pin "12"
+			(uuid "352fcb61-f723-408d-8821-cb0f8205d072")
+		)
+		(pin "16"
+			(uuid "2772ccd2-5595-46bf-9024-12154888fc82")
+		)
+		(pin "17"
+			(uuid "0bafb60f-582a-482a-b28b-cf12a585ec5b")
+		)
+		(pin "18"
+			(uuid "8e93038e-c3ab-407b-af66-cfd5b43918e5")
+		)
+		(pin "23"
+			(uuid "01074bf8-5f4d-42e3-8d9d-e931205fb7bd")
+		)
+		(pin "24"
+			(uuid "42a8b7ea-af57-4096-941f-1f3eb2ed8c5a")
+		)
+		(pin "25"
+			(uuid "f209d0f2-c07e-45de-9a64-1a4c6e81f12d")
+		)
+		(pin "26"
+			(uuid "f227d6e5-bf5b-42e0-9dfe-d0e2d17926f4")
+		)
+		(pin "27"
+			(uuid "c64f67ff-4e2f-4518-ae81-bfa96a77792d")
+		)
+		(pin "28"
+			(uuid "c602a6ec-fa31-488b-b020-b36160a475a5")
+		)
+		(pin "29"
+			(uuid "43b8f2d4-5a9c-4bfa-bc81-badef2821d20")
+		)
+		(pin "13"
+			(uuid "090de78a-2308-4a60-9b60-424becf3a103")
+		)
+		(pin "19"
+			(uuid "2d86e1a5-bbfa-4443-a74b-efe81437e31a")
+		)
+		(pin "20"
+			(uuid "c68157b6-9366-4a3b-b314-cbbc23eac238")
+		)
+		(pin "21"
+			(uuid "2ac302e1-1cc8-43ad-80d7-a8938171b532")
+		)
+		(pin "22"
+			(uuid "709a2d05-7caa-47cc-a9d5-704dd1c5b461")
+		)
+		(pin "14"
+			(uuid "0f0634a6-2663-4dc2-b02e-20aa096d042d")
+		)
+		(pin "15"
+			(uuid "1708a25d-b933-4f36-8f92-747a7e18dd66")
+		)
+		(instances
+			(project "male_keyboard"
+				(path "/58898b31-0272-4fd0-b6ca-dcb6784775e4"
+					(reference "J4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
-		(at 114.3 115.57 0)
+		(at 43.18 133.35 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1730,7 +5960,7 @@
 		(fields_autoplaced yes)
 		(uuid "d5dfbc2b-39b9-4f9f-888f-44b8852c93f8")
 		(property "Reference" "#PWR01"
-			(at 114.3 121.92 0)
+			(at 43.18 139.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1739,7 +5969,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 114.3 120.65 0)
+			(at 43.18 138.43 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1747,7 +5977,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 114.3 115.57 0)
+			(at 43.18 133.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1756,7 +5986,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 114.3 115.57 0)
+			(at 43.18 133.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1765,7 +5995,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 114.3 115.57 0)
+			(at 43.18 133.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1786,35 +6016,99 @@
 		)
 	)
 	(symbol
-		(lib_name "Conn_01x12_1")
-		(lib_id "Connector_Generic:Conn_01x12")
-		(at 123.19 81.28 0)
+		(lib_id "power:GND")
+		(at 250.19 90.17 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "e4718f3e-06c5-40fa-aaa8-3ac3cabb0e74")
-		(property "Reference" "J1"
-			(at 129.032 63.246 0)
+		(fields_autoplaced yes)
+		(uuid "d9267abb-6c96-49a6-8d9e-1b4c77a92004")
+		(property "Reference" "#PWR04"
+			(at 250.19 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(hide yes)
 			)
 		)
-		(property "Value" "Elite-Pi Microcontroller"
-			(at 118.618 65.532 0)
+		(property "Value" "GND"
+			(at 250.19 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
-		(property "Footprint" "Keebio-Parts:Elite-C"
-			(at 162.814 62.738 0)
+		(property "Footprint" ""
+			(at 250.19 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 250.19 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 250.19 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "229acb26-4e92-418f-8a1b-5e8c85358cf4")
+		)
+		(instances
+			(project "male_keyboard"
+				(path "/58898b31-0272-4fd0-b6ca-dcb6784775e4"
+					(reference "#PWR04")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 215.9 43.18 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "dbba57a2-dfc4-480e-8ecc-656c37362c96")
+		(property "Reference" "SW25"
+			(at 215.9 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_Push"
+			(at 215.9 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Beibob:Kailh_socket_PG1350_optional"
+			(at 215.9 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1823,7 +6117,143 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 123.19 81.28 0)
+			(at 215.9 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 215.9 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "71c64f28-f5ec-40b1-a506-9fabe4d33ed6")
+		)
+		(pin "2"
+			(uuid "2c61a01f-1f31-4460-9a71-5c598d31ffc9")
+		)
+		(instances
+			(project "male_keyboard"
+				(path "/58898b31-0272-4fd0-b6ca-dcb6784775e4"
+					(reference "SW25")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 95.25 39.37 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "dd31316b-6e79-40e2-ae0d-9401d878a754")
+		(property "Reference" "SW15"
+			(at 95.25 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_Push"
+			(at 95.25 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Beibob:Kailh_socket_PG1350_optional"
+			(at 95.25 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 95.25 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 95.25 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "21e2c2ee-6b45-49ad-9109-74dd042fc1c0")
+		)
+		(pin "2"
+			(uuid "c37a7920-82a8-4283-ad75-46105d96021d")
+		)
+		(instances
+			(project "male_keyboard"
+				(path "/58898b31-0272-4fd0-b6ca-dcb6784775e4"
+					(reference "SW15")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_name "Conn_01x12_1")
+		(lib_id "Connector_Generic:Conn_01x12")
+		(at 52.07 99.06 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "e4718f3e-06c5-40fa-aaa8-3ac3cabb0e74")
+		(property "Reference" "J1"
+			(at 57.912 81.026 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Elite-Pi Microcontroller"
+			(at 47.498 83.312 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Keebio-Parts:Elite-C"
+			(at 91.694 80.518 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 52.07 99.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1832,7 +6262,7 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x12, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 123.952 59.436 0)
+			(at 52.832 77.216 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1938,7 +6368,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 147.32 71.12 0)
+		(at 76.2 88.9 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1947,7 +6377,7 @@
 		(fields_autoplaced yes)
 		(uuid "e98ad9a5-d205-4305-979f-09a1239d4332")
 		(property "Reference" "#PWR02"
-			(at 147.32 77.47 0)
+			(at 76.2 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1956,7 +6386,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 147.32 76.2 0)
+			(at 76.2 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1964,7 +6394,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 147.32 71.12 0)
+			(at 76.2 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1973,7 +6403,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 147.32 71.12 0)
+			(at 76.2 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1982,7 +6412,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 147.32 71.12 0)
+			(at 76.2 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1997,6 +6427,341 @@
 			(project ""
 				(path "/58898b31-0272-4fd0-b6ca-dcb6784775e4"
 					(reference "#PWR02")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 199.39 30.48 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ea590c8d-6039-4286-8239-ddea06640502")
+		(property "Reference" "SW20"
+			(at 199.39 22.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_Push"
+			(at 199.39 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Beibob:Kailh_socket_PG1350_optional"
+			(at 199.39 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 199.39 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 199.39 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "913f5dce-318f-494e-bf08-118fe17dfe55")
+		)
+		(pin "2"
+			(uuid "965534e8-2a08-486f-83e1-42e76434e8bb")
+		)
+		(instances
+			(project "male_keyboard"
+				(path "/58898b31-0272-4fd0-b6ca-dcb6784775e4"
+					(reference "SW20")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 265.43 43.18 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "eae252c7-2a0c-4367-b2a2-19e6f2135b56")
+		(property "Reference" "SW33"
+			(at 265.43 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_Push"
+			(at 265.43 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Beibob:Kailh_socket_PG1350_optional"
+			(at 265.43 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 265.43 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 265.43 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "9c922624-86d9-42d5-84fe-070311759df4")
+		)
+		(pin "2"
+			(uuid "c8d02352-b951-43a1-9bde-645f169de456")
+		)
+		(instances
+			(project "male_keyboard"
+				(path "/58898b31-0272-4fd0-b6ca-dcb6784775e4"
+					(reference "SW33")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 265.43 30.48 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f002150f-781f-43c2-ae10-632e9f0befdb")
+		(property "Reference" "SW28"
+			(at 265.43 22.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_Push"
+			(at 265.43 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Beibob:Kailh_socket_PG1350_optional"
+			(at 265.43 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 265.43 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 265.43 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "f6030380-5659-4e5d-a168-f163c1234b50")
+		)
+		(pin "2"
+			(uuid "1e3c6f81-16f2-4b97-b6fd-cf8b16b6db42")
+		)
+		(instances
+			(project "male_keyboard"
+				(path "/58898b31-0272-4fd0-b6ca-dcb6784775e4"
+					(reference "SW28")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 45.72 26.67 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f0a80119-6d5a-4b57-8467-609c60c915dc")
+		(property "Reference" "SW3"
+			(at 45.72 19.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_Push"
+			(at 45.72 21.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Beibob:Kailh_socket_PG1350_optional"
+			(at 45.72 21.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 45.72 21.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 45.72 26.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "787ff857-30e7-463c-b299-20dfa0ee54ef")
+		)
+		(pin "2"
+			(uuid "26b07c03-a92a-4215-b6f2-6d68fc53628a")
+		)
+		(instances
+			(project "male_keyboard"
+				(path "/58898b31-0272-4fd0-b6ca-dcb6784775e4"
+					(reference "SW3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 232.41 55.88 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ff7ddbe6-53b4-440a-976a-5f50751f25ca")
+		(property "Reference" "SW31"
+			(at 232.41 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_Push"
+			(at 232.41 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Beibob:Kailh_socket_PG1350_optional"
+			(at 232.41 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 232.41 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 232.41 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "9e2acb98-44c0-4e60-afac-1af65a2b5f71")
+		)
+		(pin "2"
+			(uuid "6edf5b44-2d39-4322-9ccc-556128d0bb17")
+		)
+		(instances
+			(project "male_keyboard"
+				(path "/58898b31-0272-4fd0-b6ca-dcb6784775e4"
+					(reference "SW31")
 					(unit 1)
 				)
 			)
