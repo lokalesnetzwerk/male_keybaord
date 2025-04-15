@@ -3664,7 +3664,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Beibob:Kailh_socket_PG1350_optional"
+		(property "Footprint" "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB"
 			(at 232.41 38.1 0)
 			(effects
 				(font
@@ -3865,7 +3865,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Beibob:Kailh_socket_PG1350_optional"
+		(property "Footprint" "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB"
 			(at 199.39 38.1 0)
 			(effects
 				(font
@@ -4140,7 +4140,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Beibob:Kailh_socket_PG1350_optional"
+		(property "Footprint" "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB"
 			(at 248.92 25.4 0)
 			(effects
 				(font
@@ -4275,7 +4275,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Beibob:Kailh_socket_PG1350_optional"
+		(property "Footprint" "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB"
 			(at 248.92 38.1 0)
 			(effects
 				(font
@@ -4476,7 +4476,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Beibob:Kailh_socket_PG1350_optional"
+		(property "Footprint" "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB"
 			(at 215.9 63.5 0)
 			(effects
 				(font
@@ -4543,7 +4543,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Beibob:Kailh_socket_PG1350_optional"
+		(property "Footprint" "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB"
 			(at 248.92 50.8 0)
 			(effects
 				(font
@@ -4744,7 +4744,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Beibob:Kailh_socket_PG1350_optional"
+		(property "Footprint" "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB"
 			(at 215.9 50.8 0)
 			(effects
 				(font
@@ -4946,7 +4946,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Beibob:Kailh_socket_PG1350_optional"
+		(property "Footprint" "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB"
 			(at 232.41 25.4 0)
 			(effects
 				(font
@@ -5288,7 +5288,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Beibob:Kailh_socket_PG1350_optional"
+		(property "Footprint" "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB"
 			(at 232.41 63.5 0)
 			(effects
 				(font
@@ -5422,7 +5422,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Beibob:Kailh_socket_PG1350_optional"
+		(property "Footprint" "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB"
 			(at 199.39 50.8 0)
 			(effects
 				(font
@@ -5556,7 +5556,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Beibob:Kailh_socket_PG1350_optional"
+		(property "Footprint" "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB"
 			(at 265.43 50.8 0)
 			(effects
 				(font
@@ -5690,7 +5690,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Beibob:Kailh_socket_PG1350_optional"
+		(property "Footprint" "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB"
 			(at 199.39 63.5 0)
 			(effects
 				(font
@@ -5757,7 +5757,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Beibob:Kailh_socket_PG1350_optional"
+		(property "Footprint" "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB"
 			(at 215.9 25.4 0)
 			(effects
 				(font
@@ -6107,7 +6107,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Beibob:Kailh_socket_PG1350_optional"
+		(property "Footprint" "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB"
 			(at 215.9 38.1 0)
 			(effects
 				(font
@@ -6458,7 +6458,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Beibob:Kailh_socket_PG1350_optional"
+		(property "Footprint" "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB"
 			(at 199.39 25.4 0)
 			(effects
 				(font
@@ -6525,7 +6525,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Beibob:Kailh_socket_PG1350_optional"
+		(property "Footprint" "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB"
 			(at 265.43 38.1 0)
 			(effects
 				(font
@@ -6592,7 +6592,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Beibob:Kailh_socket_PG1350_optional"
+		(property "Footprint" "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB"
 			(at 265.43 25.4 0)
 			(effects
 				(font
@@ -6726,7 +6726,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Beibob:Kailh_socket_PG1350_optional"
+		(property "Footprint" "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB"
 			(at 232.41 50.8 0)
 			(effects
 				(font
