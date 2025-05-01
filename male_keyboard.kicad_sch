@@ -4742,7 +4742,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "289a8c4d-cdd4-4b98-a632-dd9443a68ee3")
-		(property "Reference" "SW5"
+		(property "Reference" "SW4"
 			(at 78.74 19.05 0)
 			(effects
 				(font
@@ -4793,7 +4793,7 @@
 		(instances
 			(project "male_keyboard"
 				(path "/58898b31-0272-4fd0-b6ca-dcb6784775e4"
-					(reference "SW5")
+					(reference "SW4")
 					(unit 1)
 				)
 			)
@@ -4943,7 +4943,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3f8ce091-9cbe-47ad-a278-da410169aaeb")
-		(property "Reference" "SW4"
+		(property "Reference" "SW3"
 			(at 62.23 19.05 0)
 			(effects
 				(font
@@ -4994,7 +4994,7 @@
 		(instances
 			(project "male_keyboard"
 				(path "/58898b31-0272-4fd0-b6ca-dcb6784775e4"
-					(reference "SW4")
+					(reference "SW3")
 					(unit 1)
 				)
 			)
@@ -6249,7 +6249,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b654ebd1-32f2-4029-be26-757d899cc55d")
-		(property "Reference" "SW2"
+		(property "Reference" "SW1"
 			(at 29.21 19.05 0)
 			(effects
 				(font
@@ -6300,7 +6300,7 @@
 		(instances
 			(project "male_keyboard"
 				(path "/58898b31-0272-4fd0-b6ca-dcb6784775e4"
-					(reference "SW2")
+					(reference "SW1")
 					(unit 1)
 				)
 			)
@@ -7338,7 +7338,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f0a80119-6d5a-4b57-8467-609c60c915dc")
-		(property "Reference" "SW3"
+		(property "Reference" "SW2"
 			(at 45.72 19.05 0)
 			(effects
 				(font
@@ -7389,7 +7389,7 @@
 		(instances
 			(project "male_keyboard"
 				(path "/58898b31-0272-4fd0-b6ca-dcb6784775e4"
-					(reference "SW3")
+					(reference "SW2")
 					(unit 1)
 				)
 			)
