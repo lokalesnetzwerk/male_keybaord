@@ -1750,16 +1750,6 @@
 	)
 	(wire
 		(pts
-			(xy 69.85 106.68) (xy 81.28 106.68)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d10975c3-0c33-4c26-bc83-7ab387708204")
-	)
-	(wire
-		(pts
 			(xy 232.41 120.65) (xy 232.41 125.73)
 		)
 		(stroke
@@ -1954,28 +1944,6 @@
 					(size 1.27 1.27)
 				)
 				(justify right)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "18"
-		(shape input)
-		(at 81.28 106.68 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "143aef2d-9777-45d6-8fa8-a7fbd1a0bf3c")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 86.6842 106.68 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
 				(hide yes)
 			)
 		)
@@ -2222,7 +2190,7 @@
 			)
 		)
 	)
-	(global_label "17"
+	(global_label "18"
 		(shape input)
 		(at 81.28 109.22 0)
 		(fields_autoplaced yes)
@@ -2508,7 +2476,7 @@
 			)
 		)
 	)
-	(global_label "13"
+	(global_label "14"
 		(shape input)
 		(at 60.96 124.46 270)
 		(fields_autoplaced yes)
@@ -2882,7 +2850,7 @@
 			)
 		)
 	)
-	(global_label "14"
+	(global_label "15"
 		(shape input)
 		(at 63.5 124.46 270)
 		(fields_autoplaced yes)
@@ -3080,7 +3048,7 @@
 			)
 		)
 	)
-	(global_label "16"
+	(global_label "17"
 		(shape input)
 		(at 81.28 111.76 0)
 		(fields_autoplaced yes)
@@ -3828,7 +3796,7 @@
 			)
 		)
 	)
-	(global_label "12"
+	(global_label "13"
 		(shape input)
 		(at 58.42 124.46 270)
 		(fields_autoplaced yes)
@@ -4268,7 +4236,7 @@
 			)
 		)
 	)
-	(global_label "15"
+	(global_label "16"
 		(shape input)
 		(at 81.28 114.3 0)
 		(fields_autoplaced yes)
@@ -4532,7 +4500,7 @@
 			)
 		)
 	)
-	(global_label "10"
+	(global_label "11"
 		(shape input)
 		(at 53.34 124.46 270)
 		(fields_autoplaced yes)
@@ -4576,7 +4544,7 @@
 			)
 		)
 	)
-	(global_label "11"
+	(global_label "12"
 		(shape input)
 		(at 55.88 124.46 270)
 		(fields_autoplaced yes)
@@ -5286,7 +5254,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "54b89753-b691-46dc-9865-259b3f3d81cc")
-		(property "Reference" "SW19"
+		(property "Reference" "SW18"
 			(at 95.25 57.15 0)
 			(effects
 				(font
@@ -5337,7 +5305,7 @@
 		(instances
 			(project "male_keyboard"
 				(path "/58898b31-0272-4fd0-b6ca-dcb6784775e4"
-					(reference "SW19")
+					(reference "SW18")
 					(unit 1)
 				)
 			)
@@ -5780,7 +5748,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "7f2c61da-b83f-42a9-ac9a-d7a69583a630")
-		(property "Reference" "SW18"
+		(property "Reference" "SW15"
 			(at 95.25 44.45 0)
 			(effects
 				(font
@@ -5831,7 +5799,7 @@
 		(instances
 			(project "male_keyboard"
 				(path "/58898b31-0272-4fd0-b6ca-dcb6784775e4"
-					(reference "SW18")
+					(reference "SW15")
 					(unit 1)
 				)
 			)
@@ -6115,7 +6083,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a743f533-4c9c-497d-9ec2-45c6b7a76128")
-		(property "Reference" "SW10"
+		(property "Reference" "SW5"
 			(at 95.25 19.05 0)
 			(effects
 				(font
@@ -6166,7 +6134,7 @@
 		(instances
 			(project "male_keyboard"
 				(path "/58898b31-0272-4fd0-b6ca-dcb6784775e4"
-					(reference "SW10")
+					(reference "SW5")
 					(unit 1)
 				)
 			)
@@ -6919,7 +6887,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "dd31316b-6e79-40e2-ae0d-9401d878a754")
-		(property "Reference" "SW15"
+		(property "Reference" "SW10"
 			(at 95.25 31.75 0)
 			(effects
 				(font
@@ -6970,7 +6938,7 @@
 		(instances
 			(project "male_keyboard"
 				(path "/58898b31-0272-4fd0-b6ca-dcb6784775e4"
-					(reference "SW15")
+					(reference "SW10")
 					(unit 1)
 				)
 			)
