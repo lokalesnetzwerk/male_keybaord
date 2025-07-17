@@ -64,7 +64,6 @@
 			(psnegative no)
 			(psa4output no)
 			(plot_black_and_white yes)
-			(plotinvisibletext no)
 			(sketchpadsonfab no)
 			(plotpadnumbers no)
 			(hidednponfab no)
@@ -8720,7 +8719,7 @@
 		)
 		(fp_line
 			(start 4.059999 -1.520001)
-			(end 4.06 11.680001)
+			(end 4.060001 11.680001)
 			(stroke
 				(width 0.05)
 				(type solid)
@@ -8729,7 +8728,7 @@
 			(uuid "8db7460a-42b5-412d-8552-f50008d89c44")
 		)
 		(fp_line
-			(start 4.06 11.680001)
+			(start 4.060001 11.680001)
 			(end -9.14 11.68)
 			(stroke
 				(width 0.05)
@@ -13197,7 +13196,7 @@
 		)
 		(fp_line
 			(start -12.065 -4.445001)
-			(end 6.985 -4.445)
+			(end 6.985001 -4.445)
 			(stroke
 				(width 0.15)
 				(type solid)
@@ -13216,7 +13215,7 @@
 			(uuid "a63eb03d-6ca4-4dcf-bd6c-7311386f983a")
 		)
 		(fp_line
-			(start 6.985 -4.445)
+			(start 6.985001 -4.445)
 			(end 6.985 14.605)
 			(stroke
 				(width 0.15)
@@ -13226,7 +13225,7 @@
 			(uuid "6563343a-0caa-4f92-97b3-1c38e61460b3")
 		)
 		(fp_line
-			(start -9.14 11.680001)
+			(start -9.14 11.680002)
 			(end -9.14 -1.52)
 			(stroke
 				(width 0.05)
@@ -13247,7 +13246,7 @@
 		)
 		(fp_line
 			(start 4.06 11.68)
-			(end -9.14 11.680001)
+			(end -9.14 11.680002)
 			(stroke
 				(width 0.05)
 				(type solid)
@@ -13286,7 +13285,7 @@
 			(uuid "64fff6f3-62ef-4b82-b950-6c6b3c76050f")
 		)
 		(fp_line
-			(start 3.809999 11.43)
+			(start 3.809999 11.429999)
 			(end -8.890001 11.43)
 			(stroke
 				(width 0.1)
@@ -13297,7 +13296,7 @@
 		)
 		(fp_line
 			(start 3.809999 -1.27)
-			(end 3.809999 11.43)
+			(end 3.809999 11.429999)
 			(stroke
 				(width 0.1)
 				(type solid)
@@ -13689,7 +13688,7 @@
 		(uuid "20263e9b-dd25-45fc-bb88-7ea277cf5684")
 	)
 	(gr_line
-		(start 30 65)
+		(start 30.6 65)
 		(end 50 65)
 		(stroke
 			(width 0.05)
@@ -13730,7 +13729,7 @@
 	)
 	(gr_line
 		(start 30 125.5)
-		(end 30 65)
+		(end 30 65.6)
 		(stroke
 			(width 0.05)
 			(type default)
@@ -13828,6 +13827,17 @@
 		(layer "Edge.Cuts")
 		(uuid "793a8547-cbdb-4faf-9cd6-4ce74ed583ad")
 	)
+	(gr_arc
+		(start 30 65.6)
+		(mid 30.175736 65.175736)
+		(end 30.6 65)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(layer "Edge.Cuts")
+		(uuid "798f9079-2d89-4095-9d07-96b7ba466596")
+	)
 	(gr_line
 		(start 218.985 51.67)
 		(end 198.985 51.67)
@@ -13860,7 +13870,7 @@
 	)
 	(gr_line
 		(start 70 53.75)
-		(end 70 45)
+		(end 70 45.4)
 		(stroke
 			(width 0.05)
 			(type default)
@@ -13889,7 +13899,7 @@
 		(uuid "ad0798b6-bf95-4fcf-afac-c3715bd1e223")
 	)
 	(gr_line
-		(start 70 45)
+		(start 70.4 45)
 		(end 90.75 45)
 		(stroke
 			(width 0.05)
@@ -13987,6 +13997,17 @@
 		)
 		(layer "Edge.Cuts")
 		(uuid "dfbdc679-925e-4a18-8fd5-60b5f3b749fd")
+	)
+	(gr_arc
+		(start 70 45.4)
+		(mid 70.117157 45.117157)
+		(end 70.4 45)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(layer "Edge.Cuts")
+		(uuid "e1b94a99-811f-4caa-955b-ab0e43cee87d")
 	)
 	(gr_line
 		(start 218.985 44.92)
